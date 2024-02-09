@@ -21,7 +21,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50; /* Updated color */
+    background-color: #0d67bc; /* Updated color */
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -30,6 +30,12 @@ button {
     width: 100%;
     border-radius: 5px; /* Rounded corners for buttons */
 }
+
+/* Group 3 Login*/
+h3 {
+    text-align: center;
+}
+
 
 /* Add a hover effect for buttons */
 button:hover {
