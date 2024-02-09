@@ -7,29 +7,26 @@
     <link rel="stylesheet" href="loginpage.css">
 </head>
 <body>
-
-<form id="loginForm" action="action_page.php" method="post">
     <div class="container">
         <h3>Group 3 Login</h3>
 
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="username" required>
+        <form id="loginForm" onsubmit="login(); return false;">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
 
-        <button type="submit" class="login-button">Login</button>
+            <button type="submit" class="login-button">Login</button>
 
-        <!--
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        -->
-
+            <!--
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            -->
+        </form>
     </div>
-</form>
 
-<script src="script.js"></script> <!-- Link to the JavaScript file -->
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
-
