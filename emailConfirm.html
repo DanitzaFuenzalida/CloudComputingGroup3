@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignInPage</title>
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Email Confirm</h3>
+
+        <form id="EmailForm" onsubmit="redirectOnSignIn(); return false;">
+            <p>Thank you! Press the next button below to be redirected to our login page.</p> 
+
+            <button type="submit" class="login-button">Next</button>
+        </form>
+    </div>
+
+    <script>
+        function redirectOnSignIn() {
+            window.location.href = "loginpage.html";
+        }
+    </script>
+</body>
+</html>
