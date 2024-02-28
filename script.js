@@ -60,7 +60,7 @@ async function signUp() {
         if (data.success) {
             window.location.replace('emailConfirm.html');
         } else {
-            alert("Sign In Failed: Error on username or password.");
+            alert("Sign up failed: Already existing username.");
         }
     } catch (error) {
         console.error('Sign In Failed:', error);
