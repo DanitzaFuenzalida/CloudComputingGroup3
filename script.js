@@ -41,6 +41,7 @@ async function signUp() {
 
     var inputUsername = document.querySelector('input[name="username"]').value;
     var inputPassword = document.querySelector('input[name="password"]').value;
+    var inputEmail = document.querySelector('input[name="email"]').value;
 
     try {
         const response = await fetch('https://xfae0aaxng.execute-api.us-west-2.amazonaws.com/prod/createNewUser', {
@@ -48,7 +49,7 @@ async function signUp() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username: inputUsername, password: inputPassword })
+            body: JSON.stringify({ username: inputUsername, password: inputPassword, email: inputEmail })
         });
 
         if (!response.ok) {
